@@ -1,17 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {ElectronicsComponent} from './electronics/electronics.component';
+import {ClothingComponent} from './clothing/clothing.component';
+import {GroceriesComponent} from './groceries/groceries.component';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponentComponent } from './test-component/test-component.component';
-import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TestComponentComponent,
-    ProductListComponent
-  ],
+  declarations: [AppComponent,ElectronicsComponent, ClothingComponent, GroceriesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule
@@ -19,4 +17,5 @@ import { ProductListComponent } from './product-list/product-list.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

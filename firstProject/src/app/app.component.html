@@ -1,9 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    My First {{ title }}!
-  </h1>
-  
-<h2><app-product-list-component></app-product-list-component></h2>
+<ul>
+  <li [routerLink]="['/electronics']">Electronics</li>
+  <li [routerLink]="['/clothing']">Clothing</li>
+  <li [routerLink]="['/groceries']">Groceries</li>
+</ul>
 
 <router-outlet></router-outlet>
